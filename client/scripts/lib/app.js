@@ -9,6 +9,7 @@ import Loader from 'angular-ecmascript/module-loader';
 import { Meteor } from 'meteor/meteor';
 
 //Modules
+import ChatsCtrl from '../controllers/chats.controller';
 import RoutesConfig from '../routes';
 const App = 'Whatsapp';
 
@@ -19,6 +20,7 @@ Angular.module(App, [
 ]);
 
 new Loader(App)
+	.load(ChatsCtrl)
 	.load(RoutesConfig);
 
 //Startup
