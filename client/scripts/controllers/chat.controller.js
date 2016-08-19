@@ -17,5 +17,8 @@ export default class ChatCtrl extends Controller {
     });
   }
 }
- 
+
+sendMessage(){
+  }
+
 ChatCtrl.$inject = ['$stateParams'];
